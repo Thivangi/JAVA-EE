@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <servlet-mapping>
+        <servlet-name>login</servlet-name> <!--..το αρχείο με όνομα login.java -->
+        <url-pattern>/login</url-pattern> <!--   πάλι το αρχείο login.java απλά δηλώνουμε το url του -->
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>login</servlet-name> <!--   ...το αρχείο με όνομα login.java... -->
+        <servlet-class>webapp.login</servlet-class>  <!--   βρίσκεται στην τοποθεσία webapp.login -->
+    </servlet>
+
+
+    <servlet>
+        <servlet-name>Ajax</servlet-name>
+        <servlet-class>AjaxCall.Ajax</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Ajax</servlet-name>
+        <url-pattern>/Ajax/*</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet-mapping>
+        <servlet-name>SetDataToBoxes</servlet-name>
+        <url-pattern>/SetDataToBoxes</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>SetDataToBoxes</servlet-name>
+        <servlet-class>AjaxCall.SetDataToBoxes</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>GetDataFromBoxes</servlet-name>
+        <url-pattern>/GetDataFromBoxes</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>GetDataFromBoxes</servlet-name>
+        <servlet-class>AjaxCall.GetDataFromBoxes</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>Register</servlet-name>
+        <url-pattern>/Register</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Register</servlet-name>
+        <servlet-class>AjaxCall.Register</servlet-class>
+    </servlet>
+
+
+
+</web-app>
