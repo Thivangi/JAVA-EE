@@ -1,4 +1,11 @@
 # JAVA-EE
+
+# IDE: InteliJ Ultimate
+
+# Language : JAVA
+
+# Web application
+
 JAVA EE (Web app)
 
 Web app aplication that calculates oil consumption (price/liters, liters),depending on the user's data, for each moth, for each user, for each year.
